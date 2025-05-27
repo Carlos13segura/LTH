@@ -1,0 +1,134 @@
+/* Estilos Generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    box-sizing: border-box; /* Asegura que el ancho incluya padding y border */
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    background: linear-gradient(135deg, #003366, #00509e);
+    color: #ffffff;
+}
+
+
+/* Contact Info Section */
+.contact-info h2 {
+    font-size: 2.2rem; /* Ligeramente más grande para destacar */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00264d; /* Azul oscuro más profundo */
+    text-transform: uppercase; /* Agrega un toque profesional */
+}
+
+a {
+    color: #00264d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Opcional: subrayado al pasar el cursor */
+}
+
+
+.contact-info p {
+    margin: 0;
+    color: #00509e; /* Azul más vibrante */
+    font-size: 1rem; /* Ajuste de tamaño para mejor legibilidad */
+}
+
+/* Contact Form */
+.contact-form label {
+    font-weight: bold;
+    color: #003366; /* Azul oscuro que coincide con la paleta */
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #003366; /* Borde azul oscuro */
+    border-radius: 5px; /* Bordes redondeados para un diseño más moderno */
+    padding: 10px;
+    font-size: 1rem;
+    color: #333333; /* Texto oscuro para buena legibilidad */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00509e; /* Azul más vibrante al enfocar */
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.5); /* Efecto sutil de enfoque */
+}
+
+.contact-form .btn-primary {
+    background-color: #004080;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #002060;
+}
+
+
+/* Form Section Background */
+.contact-section {
+    background: linear-gradient(135deg, #e6f2ff, #cce0ff); /* Fondo claro que resalta el formulario */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-section {
+    animation: fadeInUp 1s ease-out;
+}
+
+@media (max-width: 480px) {
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}

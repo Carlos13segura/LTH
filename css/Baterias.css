@@ -1,0 +1,386 @@
+/* Estilos Generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animación de entrada para el banner */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del Banner */
+.banner-lth {
+    background: linear-gradient(135deg, #0433BF, #042959, #053BA6);
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    position: relative;
+    text-align: center;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Contenido del banner */
+.banner-content {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+/* Estilo del título */
+.banner-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.banner-title:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+}
+
+/* Estilo del texto */
+.banner-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.banner-text:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo de encabezado h2 */
+h2 {
+    font-size: 32px;
+    color: #003366;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    position: relative;
+    animation: fadeInUp 1s ease-out forwards;
+    transition: transform 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.03);
+}
+
+
+/* Tarjetas */
+/* Contenedor de tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* Estilos de las tarjetas */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: translateY(-5px); /* Efecto flotante */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.568); /* Más profundidad en el hover */
+}
+
+/* Efecto clic */
+.card:active {
+    transform: translateY(2px); /* Pequeño hundimiento */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Menos sombra al clic */
+}
+
+/* Animación al cargar */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Imagen de la tarjeta */
+.card img {
+    width: 100px; /* Tamaño ajustado */
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+/* Título de la tarjeta */
+.card h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #020464;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Descripción de la tarjeta */
+.card p {
+    font-size: 1rem;
+    color: #0e0202;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Botón de acción */
+.btn {
+    background: linear-gradient(135deg, #003366, #0056b3);
+    color: #ffffff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #b30000, #003366);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- NUEVOS EFECTOS VISUALES --- */
+
+/* Efecto de "resplandor" al pasar el mouse */
+.card:hover {
+    position: relative;
+}
+.card:hover::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(0, 51, 102, 0.2), transparent);
+    z-index: -1;
+    border-radius: 20px;
+    animation: glowPulse 1.5s infinite ease-in-out;
+}
+
+/* Animación de resplandor */
+@keyframes glowPulse {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
+
+/* Animación de entrada escalada con retardo */
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Efecto de brilla-borde al pasar el mouse sobre botón */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 35px;
+    background: linear-gradient(45deg, #ffffff44, #ffffff11);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+/* Efecto de texto flotante en títulos de tarjetas */
+.card h5 {
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+.card:hover h5 {
+    transform: translateY(-3px);
+    letter-spacing: 1px;
+}
+
+/* Efecto de entrada suave al contenedor de tarjetas */
+.card-container {
+    animation: fadeInContainer 1s ease-out both;
+}
+
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Pantallas pequeñas: Teléfonos móviles (menor a 576px) */
+@media (max-width: 576px) {
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+/* Pantallas medianas: Tablets (576px a 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para tablets */
+    }
+
+    .card img {
+        width: 80px; /* Tamaño ajustado */
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Pantallas grandes: Laptops pequeñas (768px a 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .banner-text {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    }
+
+    .card img {
+        width: 100px;
+    }
+}
+
+/* Pantallas extra grandes: Laptops y monitores grandes (992px a 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .banner-title {
+        font-size: 3.5rem;
+    }
+
+    .banner-text {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    }
+}
+
+/* Pantallas ultra grandes (más de 1200px) */
+@media (min-width: 1200px) {
+    .banner-title {
+        font-size: 4rem;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(5, 1fr); /* Cinco columnas para pantallas muy grandes */
+    }
+}

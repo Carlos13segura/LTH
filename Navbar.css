@@ -1,0 +1,341 @@
+/* Base Styles */
+.menu-container {
+    background-color: #ffffff;
+    border-bottom: 2px solid rgba(233, 236, 239, 0.16);
+    animation: fadeIn 1s ease-out;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-link,
+.menu-text,
+.dropdown-item {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #ff0000;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.menu-text {
+    font-size: 0.95rem;
+    color: #333333;
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Logo */
+.logo-link img {
+    max-height: 45px;
+    transition: transform 0.3s ease;
+}
+
+.logo-link img:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+.menu-item {
+    flex: 1 1 25%; /* O ajústalo a 30% para que bajen si son muchos */
+    text-align: center;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 0;
+    opacity: 0;
+    animation: dropdownFade 0.5s ease-out forwards;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    min-width: 200px;
+}
+
+.dropdown-header {
+    font-size: 0.9rem;
+    color: #d62828;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    animation: popIn 0.5s ease-out;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #212529;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f1f3f5;
+    color: #0026ff;
+    transform: translateX(5px);
+    outline: none;
+}
+
+/* Custom Scrollbar */
+.custom-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #1100fa #f0f0f0;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #1100fad3;
+    border-radius: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+/* ===================== DISPOSITIVOS PEQUEÑOS ===================== */
+
+/* iPhone SE, Android pequeños (≤360px) */
+@media (max-width: 360px) {
+    .menu-container {
+        padding: 6px 8px;
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .menu-text {
+        font-size: 0.7rem;
+    }
+
+    .logo-link img {
+        max-height: 30px;
+    }
+}
+
+/* iPhone 12, Galaxy S20, etc. (361px–420px) */
+@media (max-width: 420px) {
+    .menu-container {
+        padding: 8px 10px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .menu-text {
+        font-size: 0.75rem;
+    }
+
+    .logo-link img {
+        max-height: 34px;
+    }
+
+    .dropdown-menu {
+        min-width: 140px;
+    }
+
+    .menu-item {
+        flex: 1 1 30%;
+        text-align: center;
+    }
+}
+
+/* Teléfonos medianos (421px–576px) */
+@media (max-width: 576px) {
+    .menu-container {
+        padding: 10px 16px;
+        gap: 8px;
+    }
+
+    .menu-text {
+        font-size: 0.85rem;
+    }
+
+    .logo-link img {
+        max-height: 38px;
+    }
+}
+
+/* Medianos (401px–480px) */
+@media (max-width: 480px) {
+    .menu-container {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .menu-text {
+        font-size: 0.8rem;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
+    }
+
+    .logo-link img {
+        max-height: 36px;
+    }
+}
+
+/* Teléfonos grandes / phablets (481px–576px) */
+@media (max-width: 576px) {
+    .menu-container {
+        padding: 10px 18px;
+        gap: 12px;
+    }
+
+    .menu-text {
+        font-size: 0.85rem;
+    }
+
+    .logo-link img {
+        max-height: 40px;
+    }
+}
+
+/* Tablets (577px–768px) */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 12px 20px;
+    }
+
+    .menu-text {
+        font-size: 0.9rem;
+    }
+
+    .dropdown-menu {
+        min-width: 180px;
+    }
+
+    .logo-link img {
+        max-height: 42px;
+    }
+}
+
+/* Tablets grandes / Laptops pequeñas (769px–992px) */
+@media (max-width: 992px) {
+    .menu-container {
+        padding: 12px 22px;
+    }
+
+    .menu-text {
+        font-size: 0.95rem;
+    }
+
+    .logo-link img {
+        max-height: 44px;
+    }
+}
+
+/* Laptops medianas (993px–1440px) */
+@media (max-width: 1440px) {
+    .menu-container {
+        padding: 12px 25px;
+    }
+
+    .menu-text {
+        font-size: 1rem;
+    }
+
+    .logo-link img {
+        max-height: 48px;
+    }
+}
+
+/* Pantallas grandes (1441px–1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .menu-container {
+        padding: 14px 32px;
+    }
+
+    .menu-text {
+        font-size: 1.05rem;
+    }
+
+    .logo-link img {
+        max-height: 52px;
+    }
+}
+
+/* Pantallas 4K (≥1921px) */
+@media (min-width: 1921px) {
+    .menu-container {
+        padding: 16px 40px;
+    }
+
+    .menu-text {
+        font-size: 1.2rem;
+    }
+
+    .logo-link img {
+        max-height: 60px;
+    }
+}

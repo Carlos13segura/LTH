@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="src/AnyConv.com__logo-lth.webp" type="image/x-icon">
+        <title>LTH - Distribuidora Zepeda</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="Navbar.css"> 
+        <link rel="stylesheet" href="Footer.css">
+        <link rel="stylesheet" href="css/LTH.css">
+        <link rel="stylesheet" href="css/Boton De Whatsapp.css">
+    </head>
+    <body>
+        <div class="menu-container d-flex justify-content-around align-items-center w-100 py-3 shadow-sm">
+            <!-- Buscar -->
+            <a href="Buscar.html" class="menu-link text-center">
+                <span class="iconify text-primary" data-icon="mdi:magnify" data-width="30" aria-hidden="true"></span>
+                <span class="menu-text mt-1">Buscar</span>
+            </a>
+            
+            <!-- Contacto -->
+            <a href="Contacto.html" class="menu-link text-center">
+                <span class="iconify text-primary" data-icon="mdi:account" data-width="30" aria-hidden="true"></span>
+                <span class="menu-text mt-1">Contáctanos</span>
+            </a>
+            
+            <!-- Buscador de Productos -->
+            <a href="Buscador-de-Productos.html" class="menu-link text-center">
+                <span class="iconify text-primary" data-icon="mdi:briefcase-search" data-width="30" aria-hidden="true"></span>
+                <span class="menu-text mt-1">Buscador de Productos</span>
+            </a>
+            
+            <!-- Logo -->
+            <a href="index.html" class="logo-link">
+                <img src="https://paautos.gt/inicio/wp-content/uploads/2021/06/bateria-lth-guatemala-mr.png" alt="Logo LTH" class="logo-img">
+            </a>
+            
+            <!-- Centros de Servicio -->
+            <a href="Centro-de-Servicios.html" class="menu-link text-center">
+                <span class="iconify text-primary" data-icon="mdi:map-marker-radius" data-width="30" aria-hidden="true"></span>
+                <span class="menu-text mt-1">Centros de Servicio</span>
+            </a>
+            
+            <!-- LTH a Domicilio -->
+            <a href="LTH-a-Domicilio.html" class="menu-link text-center">
+                <span class="iconify text-primary" data-icon="mdi:home" data-width="30" aria-hidden="true"></span>
+                <span class="menu-text mt-1">LTH A Domicilio</span>
+            </a>
+            
+            <!-- Dropdown: Ver Más -->
+            <div class="dropdown">
+                <a class="menu-link dropdown-toggle text-center" href="#" id="dropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="iconify text-primary" data-icon="mdi:menu" data-width="30"></span>
+                    <span class="menu-text mt-1">Ver Más</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end rounded-3 shadow-lg custom-scroll" aria-labelledby="dropdownMenu">
+                    <!-- Productos -->
+                    <li><h6 class="dropdown-header">Productos</h6></li>
+                    <li><a class="dropdown-item" href="Baterias.html"><span class="iconify" data-icon="mdi:car-battery"></span> Baterías</a></li>
+                    <li><a class="dropdown-item" href="Filtros.html"><span class="iconify" data-icon="mdi:filter"></span> Filtros</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify" data-icon="mdi:oil"></span> Lubricantes</a></li>
+                    <li><a class="dropdown-item" href="Moto-Baterias.html"><span class="iconify" data-icon="mdi:motorbike"></span> Moto-Baterías</a></li>
+                    <li><a class="dropdown-item" href="Baterias Alcalinaz.html"><span class="iconify" data-icon="mdi:battery-charging"></span> Baterías Alcalinas</a></li>
+                    <li><a class="dropdown-divider"></a></li>
+                    <li><h6 class="dropdown-header">Baterías Avanzadas</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify" data-icon="mdi:shield"></span> LTH Proyect</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify" data-icon="mdi:star-circle"></span> LTH Evolution</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify" data-icon="mdi:star-circle-outline"></span> LTH Evolution Auxiliar</a></li>
+                    <li><a class="dropdown-divider"></a></li>
+                    <li><h6 class="dropdown-header">Tecnología</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify" data-icon="mdi:chip"></span> Tecnología</a></li>
+                    <li><h6 class="dropdown-header">Ecología</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:certificate"></span> Certificaciones</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:account-group-outline"></span> Programas de Responsabilidad</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:recycle"></span> Reciclaje</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h6 class="dropdown-header">Soporte</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:book-open-outline"></span> ABC de tus Productos</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:shield-check-outline"></span> Garantía</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:cog-sync"></span> Instalación y Reemplazo</a></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:wrench"></span> Mantenimiento</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><h6 class="dropdown-header">Acerca de LTH</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:history"></span> La Historia de LTH</a></li>
+                    <li><a class="dropdown-divider"></a></li>
+                    <li><h6 class="dropdown-header">Experiencia LTH</h6></li>
+                    <li><a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:blogger"></span> Blog</a>
+                    <li><a class="dropdown-divider"></a></li>
+                    <h6 class="dropdown-header">Refaccionarias LTH</h6>
+                    <a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:car-wrench"></span> Refaccionarias</a></li>
+                    <li><a class="dropdown-divider"></a></li>
+                    <li><h6 class="dropdown-header">Ventas</h6></li>
+                    <a class="dropdown-item" href="#"><span class="iconify me-1" data-icon="mdi:cart"></span> Ventas</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="hero-section">
+        <h1>LTH®</h1>
+        <p>Es la batería líder desde hace más de 90 años. Es la única batería convencional en el mercado con la tecnología patentada PowerFrame®, brindando fortaleza desde su interior. LTH es ideal para vehículos con equipamiento standard como A/C o calefacción, vidrios y puertas eléctricos.</p>
+        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/default-album/categoria-lth68d80d7a3f1e467bbcd10f1a32a7577e.png?sfvrsn=58c64b7f_0" alt="Baterías LTH" class="bateria-img">
+    </section>
+    
+    <h2>Baterías Automotriz</h2>
+    <!-- Cuadrícula de Productos -->
+    <div class="container py-4">
+        <div class="row">
+            <!-- Batería 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_22f-450_front_mx.png?sfvrsn=3036021a_1" class="d-block w-100" alt="Batería LTH 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_22f-450_3-4_left_mx.png?sfvrsn=aa7164d6_1" class="d-block w-100" alt="Batería LTH 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_22f-450_3-4_right_mx.png?sfvrsn=9619efb4_1" class="d-block w-100" alt="Batería LTH 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-22F-450</h5>
+                        <p class="card-text text-danger fw-bold">$2,960.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-22F-450.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Batería 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-400_front_mx.png?sfvrsn=154afcb6_1" class="d-block w-100" alt="L-42-400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-400_3-4_left_mx.png?sfvrsn=154afcb6_2" class="d-block w-100" alt="L-42-400 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-400_3-4_right_mx.png?sfvrsn=154afcb6_3" class="d-block w-100" alt="L-42-400 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-42-400</h5>
+                        <p class="card-text text-danger fw-bold">$3,050.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-42-400.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_26r-500_front_mx.png?sfvrsn=87f91bb9_1" class="d-block w-100" alt="L-26R-500 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_26r-500_3-4_right_mx.png?sfvrsn=31bd3ca0_1" class="d-block w-100" alt="L-26R-500 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_26r-500_3-4_left_mx.png?sfvrsn=f14b877a_1" class="d-block w-100" alt="L-26R-500 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-26R-500</h5>
+                        <p class="card-text text-danger fw-bold">$3,050.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-26R-500.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample4" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_front_mx.png?sfvrsn=22e3d0_1" class="d-block w-100" alt="L-58-575 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_3-4_left_mx.png?sfvrsn=b8671173_1" class="d-block w-100" alt="L-50-575 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_3-4_right_mx.png?sfvrsn=ea67cbec_1" class="d-block w-100" alt="L-50-575 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-58-575</h5>
+                        <p class="card-text text-danger fw-bold">$3,190.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-58-575.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample5" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_front_mx.png?sfvrsn=6845b43d_1"  class="d-block w-100"  alt="L-NS40-320 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_3-4_left_mx.png?sfvrsn=19333493_1"  class="d-block w-100"   alt="L-NS40-320 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_3-4_right_mx.png?sfvrsn=b603cfa8_1" class="d-block w-100" alt="L-NS40-320 - Vista lateral derecha">
+                            </div>
+                        </div> 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-NS40-320</h5>
+                        <p class="card-text text-danger fw-bold">$3,200.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-NS40-320.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div class="carouselExample6" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_front_mx.png?sfvrsn=6845b43d_1"  class="d-block w-100"  alt="L-NS40Z-320 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_3-4_left_mx.png?sfvrsn=19333493_1" class="d-block w-100" alt="L-NS40Z-320 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40z-320_3-4_right_mx.png?sfvrsn=b603cfa8_1" class="d-block w-100" alt="L-NS40Z-320 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-NS40Z-320</h5>
+                        <p class="card-text text-danger fw-bold">$3,200.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-NS40Z-320.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample7" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40l-340_front_mx.png?sfvrsn=334f0025_1" class="d-block w-100" alt="LNS40L-340 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40l-340_3-4_left_mx.png?sfvrsn=f027eb9a_1" class="d-block w-100" alt="LNS40L-340 - Vista lateral izquierda"> 
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_ns40l-340_3-4_right_v01_mx.png?sfvrsn=94cf3a4a_1" class="d-block w-100" alt="LNS40L-340 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">    
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">LNS40L-340</h5>
+                        <p class="card-text text-danger fw-bold">$3,200.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='LNS40L-340.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div> 
+            
+            <!-- Batería 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample8" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_44b19-335_front_mx.png?sfvrsn=e7d71408_1" class="d-block w-100" alt="L-44B19-335 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_44b19-335_3-4_left_mx.png?sfvrsn=2ba8d8e_1" class="d-block w-100" alt="L-44B19-335 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_44b19-335_3-4_right_mx.png?sfvrsn=3e3d90d9_1" class="d-block w-100" alt="L-44B19-335 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample8" data-bs-slide="next">    
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-44B19-335</h5>
+                        <p class="card-text text-danger fw-bold">$3,200.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-44B19-335.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Batería 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample9" class="carousel silde" data-bs-ride="carrusel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_99_lbn1_400_front_mx.png?sfvrsn=f2d91399_1" class="d-block w-100" alt="L-99(LBN1)-400 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_99_lbn1_400_3-4_left_mx.png?sfvrsn=e76b2c95_1" class="d-block w-100" alt="L-99(LBN1)-400 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_99_lbn1_400_3-4_right_v01_mx.png?sfvrsn=b5e29fc8_1" class="d-block w-100" alt="L-99(LBN1)-400 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-99(LBN1)-400</h5>
+                        <p class="card-text text-danger fw-bold">$3,290.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-99(LBN1)-400.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 10 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample10" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24-530_front_mx.png?sfvrsn=51e99353_1" class="d-block w-100" alt="L-24-530 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24-530_3-4_left_mx.png?sfvrsn=3e2a3319_1" class="d-block w-100" alt="L-24-530 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24-530_3-4_right_mx.png?sfvrsn=ab53674_1" class="d-block w-100" alt="L-24-530 - Vista lateral derecha">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample10" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample10" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">L-24-530</h5>
+                        <p class="card-text text-danger fw-bold">$3,320.00</p>
+                        <p class="card-text">Precio entregando tu batería usada.</p>
+                        <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-24-530.html'">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Batería 11 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample11" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-500_front_mx.png?sfvrsn=854367f2_1" class="d-block w-100" alt="L-42-500 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-500_3-4_left_mx.png?sfvrsn=a3415e5d_1" class="d-block w-100" alt="L-42-500 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42-500_3-4_right_mx.png?sfvrsn=77946c3_1" class="d-block w-100" alt="L-42-500 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample11" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample11" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-42-500</h5>
+                            <p class="card-text text-danger fw-bold">$3,360.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-42-500.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 12 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample12" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_35-575_front_mx.png?sfvrsn=1f3c39e0_1" class="d-block w-100" alt="L-35-575 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_35-575_3-4_left_mx.png?sfvrsn=e46b612d_1" class="d-block w-100" alt="L-35-575 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_35-575_3-4_right_mx.png?sfvrsn=60d0f541_1" class="d-block w-100" alt="L-35-575 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample12" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample12" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-35-575</h5>
+                            <p class="card-text text-danger fw-bold">$3,370.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-35-575.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 13 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample13" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24r-530_front_mx.png?sfvrsn=c1913676_1" class="d-block w-100" alt="L-24R-530 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24r-530_3-4_left_mx.png?sfvrsn=f841f0ea_1" class="d-block w-100" alt="L-24R-530 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_24r-530_3-4_right_mx.png?sfvrsn=1d500d85_1" class="d-block w-100" alt="L-24R-530 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample13" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample13" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-24R-530</h5>
+                            <p class="card-text text-danger fw-bold">$3,470.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-24R-530.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 14 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample14" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-575_front_mx.png?sfvrsn=8f9d14_1" class="d-block w-100" alt="L-75-575 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-575_3-4_left_mx.png?sfvrsn=1db9b545_1" class="d-block w-100" alt="L-75-575 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-575_3-4_right_mx.png?sfvrsn=22309706_1" class="d-block w-100" alt="L-75-575 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample14" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample14" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-75-575</h5>
+                            <p class="card-text text-danger fw-bold">$3,490.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-75-575.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 15 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample15" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42r-500_front_mx.png?sfvrsn=c05ca0cd_1" class="d-block w-100" alt="L-42R-500 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42r-500_3-4_left_mx.png?sfvrsn=bf006df_1" class="d-block w-100" alt="L-42R-500 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_42r-500_3-4_right_mx1c787147-f1fc-4ac7-9adb-bda116340d05.png?sfvrsn=bc0fe18c_1" class="d-block w-100" alt="L-42R-500 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample15" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample15" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-42R-500</h5>
+                            <p class="card-text text-danger fw-bold">$3,500.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-42R-500.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 16 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample16" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51r-500_front_mx.png?sfvrsn=e958a518_1" class="d-block w-100" alt="L-51R-500 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51r-500_3-4_left_mx.png?sfvrsn=3f8f5285_1" class="d-block w-100" alt="L-51R-500 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51r-500_3-4_right_mx.png?sfvrsn=c94b6758_1" class="d-block w-100" alt="L-51R-500 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample16" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample16" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-51R-500</h5>
+                            <p class="card-text text-danger fw-bold">$3,500.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-51R-500.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 17 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample17" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_front_mx.png?sfvrsn=9f7cba71_1" class="d-block w-100" alt="L-51JIS-480 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_3-4_left_mx.png?sfvrsn=a95fe6b6_1" class="d-block w-100" alt="L-51JIS-480 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_3-4_right_v01_mx.png?sfvrsn=df463b64_1" class="d-block w-100" alt="L-51JIS-480 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample17" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample17" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-51JIS-480</h5>
+                            <p class="card-text text-danger fw-bold">$3,500.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-51JIS-480.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 18 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample18" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51-500_front_mx.png?sfvrsn=3731bea1_1" class="d-block w-100" alt="L-51-500 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51-500_3-4_left_mx.png?sfvrsn=3438507c_1" class="d-block w-100" alt="L-51-500 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_51-500_3-4_right_mx.png?sfvrsn=c820ceec_1" class="d-block w-100" alt="L-51-500 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample18" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample18" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-51-500</h5>
+                            <p class="card-text text-danger fw-bold">$3,670.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-51-500.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 19 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample19" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_front_mx.png?sfvrsn=9f7cba71_1" class="d-block w-100" alt="L-51JIS-480 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_3-4_left_mx.png?sfvrsn=a95fe6b6_1" class="d-block w-100" alt="L-51JIS-480 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth-auto_l-51_jis-480_3-4_right_v01_mx.png?sfvrsn=df463b64_1" class="d-block w-100" alt="L-51JIS-480 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample19" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample19" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-51 JIS-480</h5>
+                            <p class="card-text text-danger fw-bold">$3,670.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-51JIS-480.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 20 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample20" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_65-800_front_mx.png?sfvrsn=c552905b_1" class="d-block w-100" alt="L-65-800 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_65-800_3-4_left_mx.png?sfvrsn=a0b862fa_1" class="d-block w-100" alt="L-65-800 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_65-800_3-4_right_mx.png?sfvrsn=a521bdcc_1" class="d-block w-100" alt="L-65-800 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample20" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample20" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-65-800</h5>
+                            <p class="card-text text-danger fw-bold">$3,680.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-65-800.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 21 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample21" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-86-650_front_mx.png?sfvrsn=57dc3324_1" class="d-block w-100" alt="L-75/86-650 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-86-650_3-4_left_mx.png?sfvrsn=3f037f45_1" class="d-block w-100" alt="L-75/86-650 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_75-86-650_3-4_right_mx.png?sfvrsn=2585855c_1" class="d-block w-100" alt="L-75/86-650 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample21" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample21" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-75/86-650</h5>
+                            <p class="card-text text-danger fw-bold">$3,800.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-75-86-650.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 22 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample22" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-600_front_mx.png?sfvrsn=309c1995_1" class="d-block w-100" alt="L-34-600 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-600_3-4_left_mx.png?sfvrsn=7d614987_1" class="d-block w-100" alt="L-34-600 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-600_3-4_right_mx.png?sfvrsn=b11f7e08_1" class="d-block w-100" alt="L-34-600 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample22" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample22" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-34-600</h5>
+                            <p class="card-text text-danger fw-bold">$3,800.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-34-600.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Batería 23 -->
+            <div class="col-md-4 mb-4">
+                <div class="card posion-relative shadow-sm">
+                    <div id="carouselExample23" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/default-album/lth_auto_41-650_front_mx.png?sfvrsn=dadbdeac_1" class="d-block w-100" alt="L-41-650 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_41-650_3-4_left_mx.png?sfvrsn=9f179a6_1" class="d-block w-100" alt="L-41-650 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_41-650_3-4_right_mx.png?sfvrsn=ec914489_1" class="d-block w-100" alt="L-41-650 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample23" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample23" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-41-650</h5>
+                            <p class="card-text text-danger fw-bold">$3,800.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-41-650.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 24 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample24" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_47_ln2-550_front_mx.png?sfvrsn=126c868e_1" class="d-block w-100" alt="L-47(LN2)-550 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_47_ln2-550_3-4_left_mx.png?sfvrsn=400f2ab2_1" class="d-block w-100" alt="L-47(LN2)-550 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_47_ln2-550_3-4_right_mx.png?sfvrsn=c9d9809f_1" class="d-block w-100" alt="L-47(LN2)-550 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample24" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample24" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-47(LN2)-550</h5>
+                            <p class="card-text text-danger fw-bold">$3,820.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-47(LN2)-550.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 25 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample25" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_front_mx.png?sfvrsn=22e3d0_1" class="d-block w-100" alt="L-58R-575 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_3-4_left_mx.png?sfvrsn=b8671173_1" class="d-block w-100" alt="L-58R-575 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_58-575_3-4_right_mx.png?sfvrsn=ea67cbec_1" class="d-block w-100" alt="L-58R-575 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample25" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample25" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-58R-575</h5>
+                            <p class="card-text text-danger fw-bold">$3,910.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-58R-575.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 26 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample26" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27f-520_front_mx.png?sfvrsn=2e940828_1" class="d-block w-100" alt="L-27F-520 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27f-520_3-4_left_mx.png?sfvrsn=34d2b5c_1" class="d-block w-100" alt="L-27F-520 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27f-520_3-4_right_mx.png?sfvrsn=ac69aab6_1" class="d-block w-100" alt="L-27F-520 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample26" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample26" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-27F-520</h5>
+                            <p class="card-text text-danger fw-blod">$3,970.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-27F-520.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 27 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample27" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-78-750_front_mx.png?sfvrsn=6580484a_1" class="d-block w-100" alt="L-34/78-750 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-78-750_3-4_left_mx.png?sfvrsn=d25eddc7_1" class="d-block w-100" alt="L-34/78-750 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_34-78-750_3-4_right_mx.png?sfvrsn=80cb4068_1" class="d-block w-100" alt="L-34/78-750 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample27" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample27" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-34/78-750</h5>
+                            <p class="card-text text-danger fw-bold">$3,990.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-34-78-750.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 28 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample28" class="carousel slide" data-bs-slide="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_48-91_ln3-615_front_mx.png?sfvrsn=3aee8d3b_1" class="d-block w-100" alt="L48/91(LN3)-615 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_48-91_ln3-615_3-4_left_mx.png?sfvrsn=438280a1_1" class="d-block w-100" alt="L48/91(LN3)-615 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_48-91_ln3-615_3-4_right_mx.png?sfvrsn=b4f09296_1" class="d-block w-100" alt="L48/91(LN3)-615 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample28" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample28" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L48/91(LN3)-615</h5>
+                            <p class="card-text text-danger fw-bold">$4,290.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L48-91(LN3)-615.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 29 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample29" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27-700_front_mx.png?sfvrsn=d21483ba_1" class="d-block w-100" alt="L-27-700 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27-700_3-4_left_mx.png?sfvrsn=bbcae262_1" class="d-block w-100" alt="L-27-700 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_27-700_3-4_right_mx.png?sfvrsn=823c207_1" class="d-block w-100" alt="L-27-700 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample29" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample29" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-27-700</h5>
+                            <p class="card-text text-danger fw-bold">$4,500.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-27-700.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bateria 30 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative shadow-sm">
+                    <div id="carouselExample30" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_94r-800_front_mx.png?sfvrsn=5f5dd6c1_1" class="d-block w-100" alt="L-94R-800 - Vista frontal">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_94r-800_3-4_left_mx.png?sfvrsn=d1b37994_1" class="d-block w-100" alt="L-94R-800 - Vista lateral izquierda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/lth_auto_94r-800_3-4_right_v01_mx.png?sfvrsn=88958ec2_1" class="d-block w-100" alt="L-94R-800 - Vista lateral derecha">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample30" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample30" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">L-94R-800</h5>
+                            <p class="card-text text-danger fw-bold">$4,500.00</p>
+                            <p class="card-text">Precio entregando tu batería usada.</p>
+                            <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-94R-800.html'">
+                                Más información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Baterías Servicio Pesado</h2>
+            <!-- Cuadrícula de Productos -->
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample31" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4-950-ar-front.png?sfvrsn=83f80e16_2" class="d-block w-100" alt="L-4-950 AR - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4-950-ar-der.png?sfvrsn=efa09df4_2" class="d-block w-100" alt="L-4-950 AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4-950-ar-izq.png?sfvrsn=ab95a333_2" class="d-block w-100" alt="L-4-950 AR - Vista lateral derecha">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample31" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample31" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">L-4-950 AR</h5>
+                                <p class="card-text text-danger fw-bold">$3,110.00</p>
+                                <p class="card-text">Precio entregando tu batería usada.</p>
+                                <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-4-950 AR.html'">
+                                    Más información
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Baterías Servicio Pesado</h2>
+            <!-- Cuadrícula de Productos -->
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample32" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-30h-670-front.png?sfvrsn=c2b43731_2" class="d-block w-100" alt="L-30H-670 - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-30h-670-izq.png?sfvrsn=4b1c5904_2" class="d-block w-100" alt="L-30H-670 - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-30h-670-der.png?sfvrsn=b077e2b_2" class="d-block w-100" alt="L-30H-670 - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample32" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample32" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-30H-670</h5>
+                                    <p class="card-text text-danger fw-bold">$3,520.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-30-L-30H-670.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bateria 33 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample33" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-750-ar-front.png?sfvrsn=1aac46c2_2" class="d-block w-100" alt="L-31P-750 AR - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-750-ar-der.png?sfvrsn=c0306c38_2" class="d-block w-100" alt="L-31P-750 AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-750-ar-sup.png?sfvrsn=fba317ba_2" class="d-block w-100" alt="L-31P-750 AR - Vista hacia arriba">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-750-ar-izq.png?sfvrsn=f412f2e6_2" class="d-block w-100" alt="L-31P-750 AR - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample33" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample33" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-31P-750 AR</h5>
+                                    <p class="card-text text-danger fw-bold">$3,650.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-31P-750AR.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bateria 34 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample34" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-750-ar-front.png?sfvrsn=db889cec_2" class="d-block w-100" alt="L-31T-750AR - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-750-ar-sup-izq.png?sfvrsn=ef571e05_2" class="d-block w-100" alt="L-31T-750AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-750-ar-sup-der.png?sfvrsn=c96bf0b0_2" class="d-block w-100" alt="L-31T-750AR - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample34" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample34" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-31T-750AR</h5>
+                                    <p class="card-text text-danger fw-bold">$3,650.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-31T-750AR.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bateria 35 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample35" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-900-ar-front.png?sfvrsn=77a58344_2" class="d-block w-100" alt="L-31P-900 AR - vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-900-ar-der.png?sfvrsn=85282e41_2" class="d-block w-100" alt="L-31P-900 AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31p-900-ar-izq.png?sfvrsn=1a414c71_2" class="d-block w-100" alt="L-31P-900 AR - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample35" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample35" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-31P-900 AR</h5>
+                                    <p class="card-text text-danger fw-bold">$4,020.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-31P-900 AR.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bateria 36 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample36" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-900-ar-front.png?sfvrsn=198d53f3_2" class="d-block w-100" alt="L-31T-900 AR - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-900-ar-der.png?sfvrsn=d469dbc4_2" class="d-block w-100" alt="L-31T-900 AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-31t-900-ar-izq.png?sfvrsn=189d6d21_2" class="d-block w-100" alt="L-31T-900 AR - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample36" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample36" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-31T-900 AR</h5>
+                                    <p class="card-text text-danger fw-bold">$4,020.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-31T-900 AR.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Batería 37 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample37" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/default-album/lth_sp_4dlt-1000_front_mx.png?sfvrsn=42dc8130_1" class="d-block w-100" alt="L-4DLT-1000 - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/default-album/lth_sp_4dlt-1000_3-4_left_mx.png?sfvrsn=3bf05a59_1" class="d-block w-100" alt="L-4DLT-1000 - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/default-album/lth_sp_4dlt-1000_3-4_right_v01_mx.png?sfvrsn=970ea585_1" class="d-block w-100" alt="L-4DLT-1000 - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample37" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample37" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-4DLT-1000</h5>
+                                    <p class="card-text text-danger fw-bold">$5,680.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='L-4DLT-1000.html'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Batería 38 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample38" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4d-1000-front.png?sfvrsn=be90e1f7_2" class="d-block w-100" alt="L-4D-1000 - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4d-1000-der.png?sfvrsn=9ef91da_2" class="d-block w-100" alt="L-4D-1000 - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-4d-1000-izq.png?sfvrsn=9eb4cdf_2" class="d-block w-100" alt="L-4D-1000 - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample38" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample38" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-4D-1000</h5>
+                                    <p class="card-text text-danger fw-bold">$5,640.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='#'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Batería 39 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card position-relative shadow-sm">
+                            <div id="carouselExample39" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-8d-1125-ar-front.png?sfvrsn=a213cacc_2" class="d-block w-100" alt="L-8D-1125 AR - Vista frontal">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-8d-1125-ar-der.png?sfvrsn=4953001a_2" class="d-block w-100" alt="L-8D-1125 AR - Vista lateral izquierda">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://useast2prodbrandsites.blob.core.windows.net/lth-sfassets-prod/images/default-source/products/product-brands/baterias/lth-servicio-pesado/l-8d-1125-ar-izq.png?sfvrsn=c3a03701_2" class="d-block w-100" alt="L-8D-1125 AR - Vista lateral derecha">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample39" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample39" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>                                
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">L-8D-1125 AR</h5>
+                                    <p class="card-text text-danger fw-bold">$7,000.00</p>
+                                    <p class="card-text">Precio entregando tu batería usada.</p>
+                                    <button class="btn btn-primary w-100 mt-3" onclick="window.location.href='#'">
+                                        Más información
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/5215555555555?text=Hola%20me%20gustaría%20obtener%20más%20información" class="whatsapp-float" target="_blank" aria-label="Chatea con nosotros en WhatsApp">
+        <span class="iconify" data-icon="ic:baseline-whatsapp" style="color: white;"></span>
+    </a>
+
+    <!-- Pie de página -->
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+        <div class="row">
+            <!-- Columna 1: Logo y Ubicación -->
+            <div class="col-md-3">
+                <div class="logo-container">
+                    <div class="battery-top">
+                        <div class="battery-terminal"></div>
+                        <div class="battery-terminal"></div>
+                    </div>
+                    <h1 class="brand-name">ZEPEDA</h1>
+                    <h2 class="distribution">DISTRIBUCIONES</h2>
+                    <p class="tagline">TENEMOS <span class="highlight">MUCHA BATERÍA</span></p>
+                </div>
+                <p>Ubicación Pendiente</p>
+                <p>72310</p>
+                <p>Número Pendiente</p>
+            </div>
+            
+            <!-- Columna 2: Contacto -->
+            <div class="col-md-3">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Baterías</a></li>
+                    <li><a href="#">Filtros</a></li>
+                    <li><a href="#">Lubricantes</a></li>
+                    <li><a href="#">Moto Baterías</a></li>
+                    <li><a href="#">Baterías Alcalinas</a></li>
+                    <li><a href="#">Tecnología</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Acerca de LTH -->
+            <div class="col-md-3">
+                <h5>Acerca de LTH</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Ecología</a></li>
+                    <li><a href="#">Certificaciones</a></li>
+                    <li><a href="#">Programas de Responsabilidad</a></li>
+                    <li><a href="#">Reciclaje</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">ABC de Tus Productos</a></li>
+                    <li><a href="#">Garantía</a></li>
+                    <li><a href="#">Instalación y Reemplazo</a></li>
+                    <li><a href="#">Mantenimiento</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Refaccionarias -->
+            <div class="col-md-3">
+                <h5>Refaccionarias</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Venta</a></li>
+                    <li><a href="#">Centros de Servicio</a></li>
+                    <li><a href="#">LTH a Domicilio</a></li>
+                </ul>
+                <h5>Síguenos</h5>
+                <ul class="list-unstyled d-flex">
+                    <li><a href="#" class="me-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iIzE4NzdmMiIgZD0iTTI1NiAxMjhDMjU2IDU3LjMwOCAxOTguNjkyIDAgMTI4IDBTMCA1Ny4zMDggMCAxMjhjMCA2My44ODggNDYuODA4IDExNi44NDMgMTA4IDEyNi40NDVWMTY1SDc1LjV2LTM3SDEwOFY5OS44YzAtMzIuMDggMTkuMTEtNDkuOCA0OC4zNDgtNDkuOEMxNzAuMzUyIDUwIDE4NSA1Mi41IDE4NSA1Mi41Vjg0aC0xNi4xNEMxNTIuOTU5IDg0IDE0OCA5My44NjcgMTQ4IDEwMy45OVYxMjhoMzUuNWwtNS42NzUgMzdIMTQ4djg5LjQ0NWM2MS4xOTItOS42MDIgMTA4LTYyLjU1NiAxMDgtMTI2LjQ0NSIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0xNzcuODI1IDE2NWw1LjY3NS0zN0gxNDh2LTI0LjAxQzE0OCA5My44NjYgMTUyLjk1OSA4NCAxNjguODYgODRIMTg1VjUyLjVTMTcwLjM1MiA1MCAxNTYuMzQ3IDUwQzEyNy4xMSA1MCAxMDggNjcuNzIgMTA4IDk5LjhWMTI4SDc1LjV2MzdIMTA4djg5LjQ0NUExMjkgMTI5IDAgMCAwIDEyOCAyNTZhMTI5IDEyOSAwIDAgMCAyMC0xLjU1NVYxNjV6Ii8+PC9zdmc+" alt="Facebook"></a></li>
+                    <li><a href="#" class="me-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PGcgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjI1NiIgaGVpZ2h0PSIyNTYiIGZpbGw9InVybCgjc2tpbGxJY29uc0luc3RhZ3JhbTApIiByeD0iNjAiLz48cmVjdCB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgZmlsbD0idXJsKCNza2lsbEljb25zSW5zdGFncmFtMSkiIHJ4PSI2MCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xMjguMDA5IDI4Yy0yNy4xNTggMC0zMC41NjcuMTE5LTQxLjIzMy42MDRjLTEwLjY0Ni40ODgtMTcuOTEzIDIuMTczLTI0LjI3MSA0LjY0NmMtNi41NzggMi41NTQtMTIuMTU3IDUuOTcxLTE3LjcxNSAxMS41MzFjLTUuNTYzIDUuNTU5LTguOTggMTEuMTM4LTExLjU0MiAxNy43MTNjLTIuNDggNi4zNi00LjE2NyAxMy42My00LjY0NiAyNC4yNzFjLS40NzcgMTAuNjY3LS42MDIgMTQuMDc3LS42MDIgNDEuMjM2cy4xMiAzMC41NTcuNjA0IDQxLjIyM2MuNDkgMTAuNjQ2IDIuMTc1IDE3LjkxMyA0LjY0NiAyNC4yNzFjMi41NTYgNi41NzggNS45NzMgMTIuMTU3IDExLjUzMyAxNy43MTVjNS41NTcgNS41NjMgMTEuMTM2IDguOTg4IDE3LjcwOSAxMS41NDJjNi4zNjMgMi40NzMgMTMuNjMxIDQuMTU4IDI0LjI3NSA0LjY0NmMxMC42NjcuNDg1IDE0LjA3My42MDQgNDEuMjMuNjA0YzI3LjE2MSAwIDMwLjU1OS0uMTE5IDQxLjIyNS0uNjA0YzEwLjY0Ni0uNDg4IDE3LjkyMS0yLjE3MyAyNC4yODQtNC42NDZjNi41NzUtMi41NTQgMTIuMTQ2LTUuOTc5IDE3LjcwMi0xMS41NDJjNS41NjMtNS41NTggOC45NzktMTEuMTM3IDExLjU0Mi0xNy43MTJjMi40NTgtNi4zNjEgNC4xNDYtMTMuNjMgNC42NDYtMjQuMjcyYy40NzktMTAuNjY2LjYwNC0xNC4wNjYuNjA0LTQxLjIyNXMtLjEyNS0zMC41NjctLjYwNC00MS4yMzRjLS41LTEwLjY0Ni0yLjE4OC0xNy45MTItNC42NDYtMjQuMjdjLTIuNTYzLTYuNTc4LTUuOTc5LTEyLjE1Ny0xMS41NDItMTcuNzE2Yy01LjU2Mi01LjU2Mi0xMS4xMjUtOC45NzktMTcuNzA4LTExLjUzYy02LjM3NS0yLjQ3NC0xMy42NDYtNC4xNi0yNC4yOTItNC42NDdjLTEwLjY2Ny0uNDg1LTE0LjA2My0uNjA0LTQxLjIzLS42MDR6bS04Ljk3MSAxOC4wMjFjMi42NjMtLjAwNCA1LjYzNCAwIDguOTcxIDBjMjYuNzAxIDAgMjkuODY1LjA5NiA0MC40MDkuNTc1YzkuNzUuNDQ2IDE1LjA0MiAyLjA3NSAxOC41NjcgMy40NDRjNC42NjcgMS44MTIgNy45OTQgMy45NzkgMTEuNDkyIDcuNDhjMy41IDMuNSA1LjY2NiA2LjgzMyA3LjQ4MyAxMS41YzEuMzY5IDMuNTIgMyA4LjgxMiAzLjQ0NCAxOC41NjJjLjQ3OSAxMC41NDIuNTgzIDEzLjcwOC41ODMgNDAuMzk2cy0uMTA0IDI5Ljg1NS0uNTgzIDQwLjM5NmMtLjQ0NiA5Ljc1LTIuMDc1IDE1LjA0Mi0zLjQ0NCAxOC41NjNjLTEuODEyIDQuNjY3LTMuOTgzIDcuOTktNy40ODMgMTEuNDg4Yy0zLjUgMy41LTYuODIzIDUuNjY2LTExLjQ5MiA3LjQ3OWMtMy41MjEgMS4zNzUtOC44MTcgMy0xOC41NjcgMy40NDZjLTEwLjU0Mi40NzktMTMuNzA4LjU4My00MC40MDkuNTgzYy0yNi43MDIgMC0yOS44NjctLjEwNC00MC40MDgtLjU4M2MtOS43NS0uNDUtMTUuMDQyLTIuMDc5LTE4LjU3LTMuNDQ4Yy00LjY2Ni0xLjgxMy04LTMuOTc5LTExLjUtNy40NzlzLTUuNjY2LTYuODI1LTcuNDgzLTExLjQ5NGMtMS4zNjktMy41MjEtMy04LjgxMy0zLjQ0NC0xOC41NjNjLS40NzktMTAuNTQyLS41NzUtMTMuNzA4LS41NzUtNDAuNDEzcy4wOTYtMjkuODU0LjU3NS00MC4zOTZjLjQ0Ni05Ljc1IDIuMDc1LTE1LjA0MiAzLjQ0NC0xOC41NjdjMS44MTMtNC42NjcgMy45ODMtOCA3LjQ4NC0xMS41czYuODMzLTUuNjY3IDExLjUtNy40ODNjMy41MjUtMS4zNzUgOC44MTktMyAxOC41NjktMy40NDhjOS4yMjUtLjQxNyAxMi44LS41NDIgMzEuNDM3LS41NjN6bTYyLjM1MSAxNi42MDRjLTYuNjI1IDAtMTIgNS4zNy0xMiAxMS45OTZjMCA2LjYyNSA1LjM3NSAxMiAxMiAxMnMxMi01LjM3NSAxMi0xMnMtNS4zNzUtMTItMTItMTJ6bS01My4zOCAxNC4wMjFjLTI4LjM2IDAtNTEuMzU0IDIyLjk5NC01MS4zNTQgNTEuMzU1czIyLjk5NCA1MS4zNDQgNTEuMzU0IDUxLjM0NGMyOC4zNjEgMCA1MS4zNDctMjIuOTgzIDUxLjM0Ny01MS4zNDRjMC0yOC4zNi0yMi45ODgtNTEuMzU1LTUxLjM0OS01MS4zNTV6bTAgMTguMDIxYzE4LjQwOSAwIDMzLjMzNCAxNC45MjMgMzMuMzM0IDMzLjMzNGMwIDE4LjQwOS0xNC45MjUgMzMuMzM0LTMzLjMzNCAzMy4zMzRzLTMzLjMzMy0xNC45MjUtMzMuMzMzLTMzLjMzNGMwLTE4LjQxMSAxNC45MjMtMzMuMzM0IDMzLjMzMy0zMy4zMzQiLz48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9InNraWxsSWNvbnNJbnN0YWdyYW0wIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMCAtMjUzLjcxNSAyMzUuOTc1IDAgNjggMjc1LjcxNykiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjZmQ1Ii8+PHN0b3Agb2Zmc2V0PSIuMSIgc3RvcC1jb2xvcj0iI2ZkNSIvPjxzdG9wIG9mZnNldD0iLjUiIHN0b3AtY29sb3I9IiNmZjU0M2UiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNjODM3YWIiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0ic2tpbGxJY29uc0luc3RhZ3JhbTEiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgyMi4yNTk1MiAxMTEuMjA2MSAtNDU4LjM5NTE4IDkxLjc1NDQ5IC00Mi44ODEgMTguNDQxKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiMzNzcxYzgiLz48c3RvcCBvZmZzZXQ9Ii4xMjgiIHN0b3AtY29sb3I9IiMzNzcxYzgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2MGYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjwvZz48L3N2Zz4=" alt="Instagram"></a></li>
+                    <li><a href="#" class="me-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9IiMwMDhiZjUiPjxwYXRoIGQ9Ik0xIDJoMi41TDMuNSAyaC0yLjV6TTUuNSAyaDIuNUw3LjIgMmgtMi41eiI+PGFuaW1hdGUgZmlsbD0iZnJlZXplIiBhdHRyaWJ1dGVOYW1lPSJkIiBkdXI9IjAuNHMiIHZhbHVlcz0iTTEgMmgyLjVMMy41IDJoLTIuNXpNNS41IDJoMi41TDcuMiAyaC0yLjV6O00xIDJoMi41TDE4LjUgMjJoLTIuNXpNNS41IDJoMi41TDIzIDIyaC0yLjV6Ii8+PC9wYXRoPjxwYXRoIGQ9Ik0zIDJoNXYwaC01ek0xNiAyMmg1djBoLTV6Ij48YW5pbWF0ZSBmaWxsPSJmcmVlemUiIGF0dHJpYnV0ZU5hbWU9ImQiIGJlZ2luPSIwLjRzIiBkdXI9IjAuNHMiIHZhbHVlcz0iTTMgMmg1djBoLTV6TTE2IDIyaDV2MGgtNXo7TTMgMmg1djJoLTV6TTE2IDIyaDV2LTJoLTV6Ii8+PC9wYXRoPjxwYXRoIGQ9Ik0xOC41IDJoMy41TDIyIDJoLTMuNXoiPjxhbmltYXRlIGZpbGw9ImZyZWV6ZSIgYXR0cmlidXRlTmFtZT0iZCIgYmVnaW49IjAuNXMiIGR1cj0iMC40cyIgdmFsdWVzPSJNMTguNSAyaDMuNUwyMiAyaC0zLjV6O00xOC41IDJoMy41TDUgMjJoLTMuNXoiLz48L3BhdGg+PC9nPjwvc3ZnPg==" alt="Twitter"></a></li>
+                    <li><a href="#" class="me-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxLjQzZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjU2IDE4MCI+PHBhdGggZmlsbD0iI2YwMCIgZD0iTTI1MC4zNDYgMjguMDc1QTMyLjE4IDMyLjE4IDAgMCAwIDIyNy42OSA1LjQxOEMyMDcuODI0IDAgMTI3Ljg3IDAgMTI3Ljg3IDBTNDcuOTEyLjE2NCAyOC4wNDYgNS41ODJBMzIuMTggMzIuMTggMCAwIDAgNS4zOSAyOC4yNGMtNi4wMDkgMzUuMjk4LTguMzQgODkuMDg0LjE2NSAxMjIuOTdhMzIuMTggMzIuMTggMCAwIDAgMjIuNjU2IDIyLjY1N2MxOS44NjYgNS40MTggOTkuODIyIDUuNDE4IDk5LjgyMiA1LjQxOHM3OS45NTUgMCA5OS44Mi01LjQxOGEzMi4xOCAzMi4xOCAwIDAgMCAyMi42NTctMjIuNjU3YzYuMzM4LTM1LjM0OCA4LjI5MS04OS4xLS4xNjQtMTIzLjEzNCIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0xMDIuNDIxIDEyOC4wNmw2Ni4zMjgtMzguNDE4bC02Ni4zMjgtMzguNDE4eiIvPjwvc3ZnPg==" alt="YouTube"></a></li>
+                    <li><a href="#" class="me-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTYuNiA1Ljgycy41MS41IDAgMEE0LjI4IDQuMjggMCAwIDEgMTUuNTQgM2gtMy4wOXYxMi40YTIuNTkgMi41OSAwIDAgMS0yLjU5IDIuNWMtMS40MiAwLTIuNi0xLjE2LTIuNi0yLjZjMC0xLjcyIDEuNjYtMy4wMSAzLjM3LTIuNDhWOS42NmMtMy40NS0uNDYtNi40NyAyLjIyLTYuNDcgNS42NGMwIDMuMzMgMi43NiA1LjcgNS42OSA1LjdjMy4xNCAwIDUuNjktMi41NSA1LjY5LTUuN1Y5LjAxYTcuMzUgNy4zNSAwIDAgMCA0LjMgMS4zOFY3LjNzLTEuODguMDktMy4yNC0xLjQ4Ii8+PC9zdmc+" alt="Tik Tok"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/LTH.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

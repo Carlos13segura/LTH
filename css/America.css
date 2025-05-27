@@ -1,0 +1,207 @@
+/* Estilos Generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.hero-section {
+    background: linear-gradient(135deg, #0a1c2c, #6c3400); /* Degradado para más profundidad */
+    color: #ffffff;
+    padding: 80px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-section p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Imagen de batería */
+.bateria-img {
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.bateria-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenido General */
+.banner-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #0a1c2c; /* Azul profundo para contrastar */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+.banner-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    color: #333;
+    opacity: 0.95;
+    animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #ab5607; /* Naranja LTH */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tarjetas */
+.card {
+    max-width: 420px;
+    margin: 30px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(54, 53, 53, 0.2);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen */
+.img {
+    max-height: 450px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0; /* Eliminamos borde redondeado en imágenes para uniformidad */
+}
+
+/* Títulos y textos en tarjetas */
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ab5607;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 15px 10px;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    font-size: 1.05rem;
+    color: #444;
+    text-align: center;
+    padding: 0 20px 20px;
+    line-height: 1.6;
+}
+
+.card-text.text-danger {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #a04f04 !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Botón de acción */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #003366, #0056b3);
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #b30000, #003366);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

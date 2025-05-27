@@ -1,0 +1,190 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #0433BF, #042959, #053BA6);
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../src/AnyConv.com__imagen-fondo.webp') no-repeat center/cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.banner .container {
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.banner-title, .banner-subtitle {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.banner-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Botón */
+.btn {
+    background: linear-gradient(135deg, #003366, #0056b3);
+    color: #ffffff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #b30000, #003366);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de onda en botones */
+.ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: rippleEffect 0.6s linear;
+}
+
+@keyframes rippleEffect {
+    to {
+        transform: scale(9);
+        opacity: 0;
+    }
+}
+
+/* Títulos */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.section-title .highlight {
+    color: #FF0000;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Centros de Distribución */
+.location-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.subheading {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+/* Ícono de ubicación */
+.icon-color, .use-location {
+    color: #003399;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.use-location:hover {
+    text-decoration: underline;
+}
+
+/* Línea decorativa */
+.red-line {
+    width: 80px;
+    height: 4px;
+    background: #FF0000;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
